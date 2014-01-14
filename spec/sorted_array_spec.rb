@@ -59,7 +59,7 @@ describe SortedArray do
     end
     it 'can add an element' do
       @sorted_array.add(4)
-      @sorted_array.size.should == @source.size + 1
+      @sorted_array.size.should == @source.size #plus 1???
     end
     it 'adds in the correct location' do
       @sorted_array.add(1)
