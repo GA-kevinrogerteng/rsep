@@ -28,7 +28,6 @@ class SortedArray
   end
 
   def [](index)
-    mid_index = @internal_arr/2
     return @internal_arr[index]
      # raise NotImplementedError.new("You need to implement the [] method!")
   end
