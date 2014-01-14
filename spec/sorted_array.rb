@@ -62,6 +62,17 @@ class SortedArray
 
     # raise NotImplementedError.new("You need to implement the first_larger_index method!")
   def index(target)
-    raise NotImplementedError.new("You need to implement the index method!")
+    i = 0
+    @internal_arr.each do |x|
+      if target == x
+        return i 
+      else 
+        i+=1
+      end
+    end
+
+    return nil
+
+    # raise NotImplementedError.new("You need to implement the index method!")
   end
 end
