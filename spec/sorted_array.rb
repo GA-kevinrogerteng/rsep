@@ -6,6 +6,15 @@ class SortedArray
     @input_arr = input_arr
     # Fill in the rest of the initialize method here.
     # What should you do with each element of the incoming array?
+        for i in 1..(@internal_arr.length - 1)
+        value = @internal_arr[i]
+        j = i - 1
+        while j >= 0 and @internal_arr[j] > value
+            @internal_arr[j + 1] = @internal_arr[j] 
+            j -= 1
+        end
+        @internal_arr[j + 1] = value
+    end
   end
 
   def add(new_ele)
